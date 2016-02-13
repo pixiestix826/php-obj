@@ -5,9 +5,10 @@ interface Toon {
     public function getName();
     public function getRace();
     public function getSkillz();
+    public function playToon();
 }
 
-class Hunter implements Toon {
+ abstract class Hunter implements Toon {
     private $name;
     private $race;
     private $skillz;
@@ -21,7 +22,7 @@ class Hunter implements Toon {
     }
 }
 
-class Mage implements Toon {
+abstract class Mage implements Toon {
     private $name;
     private $race;
     private $skillz;
@@ -34,7 +35,7 @@ class Mage implements Toon {
         $toon->getName().", the ".$toon->getRace().", will decimate you with her ".$toon->getSkillz();
     }
 }
-class Paladin implements Toon {
+abstract class Paladin implements Toon {
     private $name;
     private $race;
     private $skillz;
