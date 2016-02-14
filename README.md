@@ -2,6 +2,10 @@
 
 Produce a working exmple of php objects using plain php, including a demonstration of polymorphism.
 
+## Object Oriented Programming
+
+According to my research, Object-oriented programming (OOP) is a programming language model organized around objects rather than "actions" and data rather than logic. 
+
 ## Polymporphism
 
 Polymorphism is an object-oriented programming concept that allows objects that may be similar to exercise their unique abilities.
