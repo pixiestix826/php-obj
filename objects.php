@@ -18,7 +18,7 @@ interface Toon {
         $this->skillz = $skillz;
     }
     public function getSkillz() {
-        $toon->getName().", the ".$toon->getRace().", will pierce your heart with her ".$toon->getSkillz();
+        return $toon->getName().", the ".$toon->getRace().", will pierce your heart with her ".$toon->getSkillz();
     }
 }
 
@@ -32,7 +32,7 @@ abstract class Mage implements Toon {
         $this->skillz = $skillz;
     }
     public function getSkillz() {
-        $toon->getName().", the ".$toon->getRace().", will decimate you with her ".$toon->getSkillz();
+        return $toon->getName().", the ".$toon->getRace().", will decimate you with her ".$toon->getSkillz();
     }
 }
 abstract class Paladin implements Toon {
@@ -45,20 +45,19 @@ abstract class Paladin implements Toon {
         $this->skillz = $skillz;
     }
     public function getSkillz() {
-        $toon->getName().", the ".$toon->getRace().", will protect you with her ".$toon->getSkillz();
+        return $toon->getName().", the ".$toon->getRace().", will protect you with her ".$toon->getSkillz();
     }
 }
 
 class Player
 {
-    public function playToon(Toon $toon)
-    {
-        return $toon->__construct();
+    public function playToon(Toon $toon) {
+        return $toon->__construct($name, $race, $skillz);
     }
 }
 
-echo playToon(new Hunter(Antigone, NightElf, BlackArrow)) . "<br/>";
-echo playToon(new Mage(Meg, Human, ArcaneBlast)) . "<br/>";
-echo playToon(new Paladin(Isis, BloodElf, HolyShield));
+playToon(new Hunter(Antigone, NightElf, BlackArrow)) . "<br/>";
+playToon(new Mage(Meg, Human, ArcaneBlast)) . "<br/>";
+playToon(new Paladin(Isis, BloodElf, HolyShield));
 
  ?>
