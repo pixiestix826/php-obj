@@ -14,7 +14,7 @@ is such a broad category, can act as interface for many types of animals like do
 In my example, I wanted to show the potential complexity when using classes that implement interfaces.
 
 * Using several examples from different online sources, I put together an example of polymorphism that utilized both public and private methods.
-* Creating a toon interface allowed me to showcase differences in character classes for a popular online game.
+* Creating a toon interface allowed me to showcase differences in character classes, each with differing races and skill sets, for a popular online game.
 * Using a public __construct function allowed me to gather private information on each character including: Name, Race and Skill Set.
 * Calling a public method of getSkillz() allowed each character to showcase unique talents/abilities.
 * Finally, the player class is able to play the toon through a return of the constructor.
